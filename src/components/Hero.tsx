@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown, Download, Eye } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown, Download } from 'lucide-react';
 
 export function Hero() {
   const scrollToAbout = () => {
@@ -7,14 +7,6 @@ export function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-16 bg-gradient-to-br from-white via-gray-50 to-blue-50/30 dark:from-gray-900 dark:via-blue-950 dark:to-gray-900 transition-colors duration-300 overflow-hidden">
-      {/* Animated Gradient Mesh Blobs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 -left-40 w-96 h-96 bg-gradient-to-br from-cyan-300/40 via-indigo-300/40 to-blue-300/40 dark:from-cyan-500/25 dark:via-indigo-500/25 dark:to-blue-500/25 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 -right-40 w-96 h-96 bg-gradient-to-br from-indigo-300/40 via-purple-300/40 to-pink-300/40 dark:from-indigo-500/25 dark:via-purple-500/25 dark:to-pink-500/25 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-br from-blue-300/40 via-cyan-300/40 to-teal-300/40 dark:from-blue-500/25 dark:via-cyan-500/25 dark:to-teal-500/25 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-br from-purple-300/30 via-pink-300/30 to-rose-300/30 dark:from-purple-500/20 dark:via-pink-500/20 dark:to-rose-500/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-blob-reverse"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gradient-to-br from-teal-300/30 via-cyan-300/30 to-blue-300/30 dark:from-teal-500/20 dark:via-cyan-500/20 dark:to-blue-500/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-60 animate-blob-reverse animation-delay-3000"></div>
-      </div>
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
@@ -108,12 +100,8 @@ export function Hero() {
                 </div>
 
                 {/* Decorative floating circles with enhanced visibility */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-full animate-bounce shadow-lg shadow-cyan-500/50" style={{ animationDuration: '3s' }}>
-                  <div className="w-full h-full rounded-full border-4 border-white dark:border-gray-800"></div>
-                </div>
-                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-gradient-to-br from-indigo-400 to-indigo-500 rounded-full animate-bounce shadow-lg shadow-indigo-500/50" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
-                  <div className="w-full h-full rounded-full border-4 border-white dark:border-gray-800"></div>
-                </div>
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-full animate-bounce shadow-lg shadow-cyan-500/50" style={{ animationDuration: '3s' }}></div>
+                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-gradient-to-br from-indigo-400 to-indigo-500 rounded-full animate-bounce shadow-lg shadow-indigo-500/50" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}></div>
                 
                 {/* Additional accent circles */}
                 <div className="absolute top-1/4 -left-4 w-12 h-12 bg-gradient-to-br from-cyan-300 to-cyan-400 rounded-full animate-pulse opacity-80"></div>
@@ -123,17 +111,17 @@ export function Hero() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <div className="p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-500 bg-clip-text text-transparent mb-2">3+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">Years Experience</div>
+            <div className="p-6 bg-white/80 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-500 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent mb-2">3+</div>
+              <div className="text-gray-600 dark:text-gray-300 font-medium">Years Experience</div>
             </div>
-            <div className="p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-500 bg-clip-text text-transparent mb-2">9.61</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">MCA CGPA</div>
+            <div className="p-6 bg-white/80 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-500 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent mb-2">9.61</div>
+              <div className="text-gray-600 dark:text-gray-300 font-medium">MCA CGPA</div>
             </div>
-            <div className="p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-500 bg-clip-text text-transparent mb-2">10+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">Projects</div>
+            <div className="p-6 bg-white/80 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-500 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent mb-2">10+</div>
+              <div className="text-gray-600 dark:text-gray-300 font-medium">Projects</div>
             </div>
           </div>
         </div>

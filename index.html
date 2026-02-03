@@ -2,8 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/img/vijayhero.JPG" />
+    <link rel="icon" type="image/x-icon" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Force light mode as default - reset any existing dark theme
+      (function() {
+        // Clear old theme and set to light
+        localStorage.removeItem('theme');
+        // Ensure dark class is not present
+        document.documentElement.classList.remove('dark');
+      })();
+    </script>
     <title>Vijay Kumar - Development Team Lead | MERN Stack Developer</title>
     <meta name="description" content="Vijay Kumar - Development Team Lead at Izzki Tech Solutions. Expert in MERN Stack, AI Development, and Cloud Technologies. MCA Topper (9.61 CGPA) | AZ-900 Certified" />
     <meta property="og:title" content="Vijay Kumar - Development Team Lead Portfolio" />
